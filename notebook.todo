@@ -1,0 +1,61 @@
+Notebook Todo list:
+List of codes to put in the notebook
+
+
+
+
+    Topics To be added:
+        ☐ power
+        ☐ Seive
+        ☐ Matrix multiplication
+        ☐ quick union
+        ☐ Max flow 
+        ☐ Dijkstra
+        ☐ Segment Tree
+        ☐ Lazy Propogation
+        ☐ KMP
+        ☐ Suffix Array
+        ☐ FFT
+        ☐ BIT
+        ☐ Rabin Miller Primality check
+        ☐ convex hull
+        ☐ LIS (nlogn)
+        ☐ SCC 
+        ☐ Union find 
+        ☐ BFS, DFS 
+        ☐ Topological Sort 
+        ☐ Sets, maps, iterators etc 
+        ☐ Hashing
+        ☐ Kruskal's (C++)
+        ☐ Bellman Ford
+        ☐ Ford Fulkerson
+        ☐ Min Cut
+        ☐ Short Theory for game theory and related stuff
+        ☐ Job Scheduling
+        ☐ Binary Search
+        ☐ Knapsack
+        ☐ Least common Ancestor
+        ☐ Tries
+        ☐ Prim's Algorithm
+        ☐ Floyd Warshall
+
+    Topics not very sure:
+        ☐ SMP
+        ☐ Closest pair of points
+        ☐ TSP        
+        ☐ Burnside Lemma
+        ☐ RMQ
+        ☐ Treaps
+        ☐ NTT (not very sure)
+        ☐ Aho-Corasick (seen at IIUM notebook)
+        ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
+        ☐ Geometry problems
+        ☐ Articulation Point 
+
+    Reference list:  
+         ☐ for some pseudocodes and explanations, https://github.com/emiraga/cat-us-trophy/blob/master/notebook/notebook.pdf
+         ☐ stanford university notebook http://home.iitk.ac.in/~sshekh/codes/notebook.html (2011- 2012)
+         ☐ Mit notebook http://web.mit.edu/~ecprice/acm/notebook.pdfhttp://web.mit.edu/~ecprice/acm/notebook.pdf
+         ☐ STanford University (2015-2016) https://github.com/jaehyunp/stanfordacm/blob/master/notebook.pdf
+         ☐ quite extensive for list of algorithms and explanations (use google translate of chrome) http://e-maxx.ru/algo/    
+         ☐ 
