@@ -6,9 +6,9 @@ List of codes to put in the notebook
 
     Topics To be added:
         ✔ Fast Exponentiation @done (16-11-29 05:40)
-        ☐ Seive
+        ☐ Sieve
         ☐ quick union
-        ✔ Max flow  @done (16-11-29 05:42)
+        ✔ Max flow @done (16-11-29 05:42) 
         ✔ Dijkstra @done (16-11-29 05:42)
         ☐ Segment Tree
         ☐ Lazy Propogation
@@ -40,8 +40,9 @@ List of codes to put in the notebook
         ✔ LCS @done (16-11-29 05:41)
         ✔ Miscellaneous Geometry @done (16-11-29 05:47)
         ☐ Big Integer Handling with python
+        ☐ STL
 
-    Topics not very sure:
+n    Topics not very sure:
         ☐ SMP
         ☐ Closest pair of points
         ☐ TSP        

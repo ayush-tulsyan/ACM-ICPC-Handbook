@@ -19,20 +19,21 @@ FastDijkstra.cc	Fast Dijkstra's algorithm
 SCC.cc	Strongly connected components
 BellmanFord.cc	Bellman Ford's algorithm
 
+[Data structures]
+SuffixArray.cc	Suffix array
+BIT.cc	Binary Indexed Tree
+UnionFind.cc	Union-find set(aka DSU)
+LCA.cc	Lowest common ancestor
+
 [Miscellaneous]
 template.h	C++ template
 IO.cc	C++ input/output
+sieve.cc	Sieve for Prime Numbers
 LongestIncreasingSubsequence.cc	Longest increasing subsequence
 KMP.cc	Knuth-Morris-Pratt
 TopologicalSort.cc	Topological sort (C++)
 FastExpo.cc	Fast exponentiation
 LCS.cc	Longest common subsequence
 MillerRabin.cc	Miller-Rabin Primality Test (C)
-
-[Data structures]
-SuffixArray.cc	Suffix array
-BIT.cc	Binary Indexed Tree
-UnionFind.cc	Union-find set(aka DSU)
-LCA.cc	Lowest common ancestor
 
 [Extra]
