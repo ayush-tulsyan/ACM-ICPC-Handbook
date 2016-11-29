@@ -20,8 +20,9 @@ SCC.cc	Strongly connected components
 BellmanFord.cc	Bellman Ford's algorithm
 
 [Miscellaneous]
-LongestIncreasingSubsequence.cc	Longest increasing subsequence
+template.h	C++ template
 IO.cc	C++ input/output
+LongestIncreasingSubsequence.cc	Longest increasing subsequence
 KMP.cc	Knuth-Morris-Pratt
 TopologicalSort.cc	Topological sort (C++)
 FastExpo.cc	Fast exponentiation

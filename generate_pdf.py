@@ -29,7 +29,7 @@ def get_sections():
 
 def get_style(filename):
     ext = filename.lower().split('.')[-1]
-    if ext in ['c', 'cc', 'cpp']:
+    if ext in ['c', 'cc', 'cpp', 'h']:
         return 'cpp'
     elif ext in ['java']:
         return 'java'
