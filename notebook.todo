@@ -6,9 +6,8 @@ List of codes to put in the notebook
 
     Topics To be added:
         ✔ Fast Exponentiation @done (16-11-29 05:40)
-        ☐ Sieve
-        ☐ quick union
-        ✔ Max flow @done (16-11-29 05:42) 
+        ✔ Sieve @done (16-11-29 13:35)
+        ✔ Max flow  @done (16-11-29 05:42)
         ✔ Dijkstra @done (16-11-29 05:42)
         ☐ Segment Tree
         ☐ Lazy Propogation
@@ -31,7 +30,6 @@ List of codes to put in the notebook
         ☐ Short Theory for game theory and related stuff
         ☐ Job Scheduling
         ☐ Binary Search
-        ☐ Knapsack
         ✔ Least common Ancestor @done (16-11-29 05:45)
         ☐ Tries
         ☐ Prim's Algorithm
@@ -39,10 +37,11 @@ List of codes to put in the notebook
         ✔ IO Tools @done (16-11-29 05:38)
         ✔ LCS @done (16-11-29 05:41)
         ✔ Miscellaneous Geometry @done (16-11-29 05:47)
-        ☐ Big Integer Handling with python
-        ☐ STL
+        ☐ Eulerian Path
+        ☐ Articulation Point 
+        ☐ Aho-Corasick (seen at IIUM notebook)
 
-n    Topics not very sure:
+    Topics not very sure:
         ☐ SMP
         ☐ Closest pair of points
         ☐ TSP        
@@ -50,17 +49,15 @@ n    Topics not very sure:
         ☐ RMQ
         ☐ Treaps
         ☐ NTT (not very sure)
-        ☐ Aho-Corasick (seen at IIUM notebook)
         ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
         ☐ Geometry problems
-        ☐ Articulation Point 
         ☐ Triangulation
         ☐ Number Theory
         ☐ Gauss Jordan
         ☐ Simplex Algorithm
-        ☐ Eulerian Path
         ☐ KD tree
         ☐ Splay tree
+        ☐ Knapsack
 
     Reference list:  
          ☐ for some pseudocodes and explanations, https://github.com/emiraga/cat-us-trophy/blob/master/notebook/notebook.pdf
