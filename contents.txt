@@ -24,6 +24,7 @@ SuffixArray.cc	Suffix array
 BIT.cc	Binary Indexed Tree
 UnionFind.cc	Union-find set(aka DSU)
 LCA.cc	Lowest common ancestor
+segmentTree.cc	Segment tree for range minima query
 
 [Miscellaneous]
 template.h	C++ template
