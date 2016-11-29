@@ -15,6 +15,7 @@ Geometry.cc	Miscellaneous geometry
 FFT_new.cc	Fast Fourier transform
 
 [Graph algorithms]
+BFS.cc	BFS
 FastDijkstra.cc	Fast Dijkstra's algorithm
 SCC.cc	Strongly connected components
 BellmanFord.cc	Bellman Ford's algorithm
