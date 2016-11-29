@@ -25,6 +25,7 @@ BIT.cc	Binary Indexed Tree
 UnionFind.cc	Union-find set(aka DSU)
 LCA.cc	Lowest common ancestor
 segmentTree.cc	Segment tree for range minima query
+lazyProp.cc	Lazy Propogation for Range update and Query
 
 [Miscellaneous]
 template.h	C++ template
