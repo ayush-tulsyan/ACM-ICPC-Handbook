@@ -38,7 +38,7 @@ bool BellmanFord (const VVT &w, VT &dist, VI &prev, int start){
           if (k == n-1) return false;
           dist[j] = dist[i] + w[i][j];
           prev[j] = i;
-        }	  
+        }
       }
     }
   }

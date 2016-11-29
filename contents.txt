@@ -18,6 +18,7 @@ FFT_new.cc	Fast Fourier transform
 FastDijkstra.cc	Fast Dijkstra's algorithm
 SCC.cc	Strongly connected components
 BellmanFord.cc	Bellman Ford's algorithm
+Kruskal.cc	Minimum Spanning Tree: Kruskal
 
 [Data structures]
 SuffixArray.cc	Suffix array

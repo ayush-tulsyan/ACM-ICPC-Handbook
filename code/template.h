@@ -11,6 +11,7 @@ typedef vector <int> vi;
 typedef vector <ll> vl;
 typedef pair <int, int> pii;
 typedef pair <ll, ll> pll;
+typedef vector <pii> vii;
 typedef vector <pll> vll;
 
 #define F first
