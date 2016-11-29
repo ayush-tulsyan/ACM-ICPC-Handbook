@@ -35,7 +35,3 @@ void callBFS(int Nvertices) {
         } 
     }
 }
-
-int main() {
-    return 0;
-}
