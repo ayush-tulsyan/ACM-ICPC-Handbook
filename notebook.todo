@@ -5,39 +5,40 @@ List of codes to put in the notebook
 
 
     Topics To be added:
-        ☐ power
+        ✔ Fast Exponentiation @done (16-11-29 05:40)
         ☐ Seive
-        ☐ Matrix multiplication
         ☐ quick union
-        ☐ Max flow 
-        ☐ Dijkstra
+        ✔ Max flow  @done (16-11-29 05:42)
+        ✔ Dijkstra @done (16-11-29 05:42)
         ☐ Segment Tree
         ☐ Lazy Propogation
-        ☐ KMP
-        ☐ Suffix Array
-        ☐ FFT
-        ☐ BIT
-        ☐ Rabin Miller Primality check
-        ☐ convex hull
-        ☐ LIS (nlogn)
-        ☐ SCC 
-        ☐ Union find 
+        ✔ KMP @done (16-11-29 05:39)
+        ✔ Suffix Array @done (16-11-29 05:42)
+        ✔ FFT @done (16-11-29 05:42)
+        ✔ BIT @done (16-11-29 05:42)
+        ✔ Rabin Miller Primality check @done (16-11-29 05:41)
+        ✔ Convex hull @done (16-11-29 05:42)
+        ✔ LIS (nlogn) @done (16-11-29 05:37)
+        ✔ SCC  @done (16-11-29 05:42)
+        ✔ Union find  @done (16-11-29 05:42)
         ☐ BFS, DFS 
-        ☐ Topological Sort 
+        ✔ Topological Sort @done (16-11-29 05:39)
         ☐ Sets, maps, iterators etc 
         ☐ Hashing
         ☐ Kruskal's (C++)
-        ☐ Bellman Ford
-        ☐ Ford Fulkerson
-        ☐ Min Cut
+        ✔ Bellman Ford @done (16-11-29 05:45)
+        ✔ Min Cut @done (16-11-29 05:43)
         ☐ Short Theory for game theory and related stuff
         ☐ Job Scheduling
         ☐ Binary Search
         ☐ Knapsack
-        ☐ Least common Ancestor
+        ✔ Least common Ancestor @done (16-11-29 05:45)
         ☐ Tries
         ☐ Prim's Algorithm
         ☐ Floyd Warshall
+        ✔ IO Tools @done (16-11-29 05:38)
+        ✔ LCS @done (16-11-29 05:41)
+        ✔ Miscellaneous Geometry @done (16-11-29 05:47)
 
     Topics not very sure:
         ☐ SMP
@@ -51,11 +52,17 @@ List of codes to put in the notebook
         ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
         ☐ Geometry problems
         ☐ Articulation Point 
+        ☐ Triangulation
+        ☐ Number Theory
+        ☐ Gauss Jordan
+        ☐ Simplex Algorithm
+        ☐ Eulerian Path
+        ☐ KD tree
+        ☐ Splay tree
 
     Reference list:  
          ☐ for some pseudocodes and explanations, https://github.com/emiraga/cat-us-trophy/blob/master/notebook/notebook.pdf
          ☐ stanford university notebook http://home.iitk.ac.in/~sshekh/codes/notebook.html (2011- 2012)
          ☐ Mit notebook http://web.mit.edu/~ecprice/acm/notebook.pdfhttp://web.mit.edu/~ecprice/acm/notebook.pdf
          ☐ STanford University (2015-2016) https://github.com/jaehyunp/stanfordacm/blob/master/notebook.pdf
-         ☐ quite extensive for list of algorithms and explanations (use google translate of chrome) http://e-maxx.ru/algo/    
-         ☐ 
+         ☐ quite extensive for list of algorithms and explanations (use google translate of chrome) http://e-maxx.ru/algo/
