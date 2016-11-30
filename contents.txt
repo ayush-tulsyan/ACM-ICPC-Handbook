@@ -15,6 +15,7 @@ Geometry.cc	Miscellaneous geometry
 FFT_new.cc	Fast Fourier transform
 sieve.cc	Sieve for Prime Numbers
 FastExpo.cc	Fast exponentiation
+Simplex.cc	Simplex Algorithm, Linear Programming
 
 [Graph algorithms]
 BFS.cc	BFS
