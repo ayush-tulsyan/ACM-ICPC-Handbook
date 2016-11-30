@@ -51,5 +51,6 @@ LCS.cc	Longest common subsequence
 GaussJordan.cc	Gauss Jordan
 MillerRabin.cc	Miller-Rabin Primality Test
 BinSearch.cc	Binary Search
+Dates.cc	Playing with dates
 
 [Extra]

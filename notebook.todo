@@ -42,6 +42,8 @@ List of codes to put in the notebook
         ☐ SMP
         ✔ Treaps @done (16-11-30 14:50)
         ✔ Gauss Jordan @done (16-11-30 15:12)
+        ✔ Euclid's & Fermat's Theorems @done (16-11-30 19:37)
+        ✔ Playing with dates @done (16-11-30 19:37)
         
 
     Topics not very sure:
@@ -53,7 +55,7 @@ List of codes to put in the notebook
         ☐ NTT (not very sure)
         ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
         ☐ Geometry problems
-        ☐ Triangulation
+        ✔ Triangulation @done (16-11-30 19:37)
         ☐ Number Theory
         ✔ Simplex Algorithm @done (16-11-30 15:51)
         ☐ KD tree
