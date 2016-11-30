@@ -46,8 +46,8 @@ IO.cc	C++ input/output
 LongestIncreasingSubsequence.cc	Longest increasing subsequence
 KMP.cc	Knuth-Morris-Pratt
 LCS.cc	Longest common subsequence
-MillerRabin.cc	Miller-Rabin Primality Test (C)
-BinSearch.cc 	Binary Search
-GaussJordan.cc 	Matrix inverse and calculation of determinant
+GaussJordan.cc	Gauss Jordan
+MillerRabin.cc	Miller-Rabin Primality Test
+BinSearch.cc	Binary Search
 
 [Extra]

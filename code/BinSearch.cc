@@ -10,6 +10,6 @@ int BinarySearch(int l, int h){
   while(l <= h){ m = (l+h) / 2; if(works(m))  l=m+1; else h=m-1; }
   return l-1;
 }
-// /*The property is decreasing
+// The property is decreasing
 // while(l <= h){ m = (l+h) / 2; if(works(m))  h=m-1; else l=m+1; }
-// return h+1; /*
+// return h+1;

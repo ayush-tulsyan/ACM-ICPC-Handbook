@@ -52,7 +52,6 @@ T GaussJordan(vvt &a, vvt &b) {
       for (int q = 0; q < m; q++) b[p][q] -= b[pk][q] * c;      
     }
   }
-
   for (int p = n-1; p >= 0; p--) if (irow[p] != icol[p]) {
     for (int k = 0; k < n; k++) swap(a[k][irow[p]], a[k][icol[p]]);
   }
