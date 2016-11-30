@@ -13,6 +13,8 @@ Geometry.cc	Miscellaneous geometry
 
 [Numerical algorithms]
 FFT_new.cc	Fast Fourier transform
+sieve.cc	Sieve for Prime Numbers
+FastExpo.cc	Fast exponentiation
 
 [Graph algorithms]
 BFS.cc	BFS
@@ -29,15 +31,14 @@ UnionFind.cc	Union-find set(aka DSU)
 LCA.cc	Lowest common ancestor
 segmentTree.cc	Segment tree for range minima query
 lazyProp.cc	Lazy Propogation for Range update and Query
+ahoCurasick.cc	Aho Curasick Structure for string matching
 
 [Miscellaneous]
 template.h	C++ template
 IO.cc	C++ input/output
-sieve.cc	Sieve for Prime Numbers
 LongestIncreasingSubsequence.cc	Longest increasing subsequence
 KMP.cc	Knuth-Morris-Pratt
 TopologicalSort.cc	Topological sort (C++)
-FastExpo.cc	Fast exponentiation
 LCS.cc	Longest common subsequence
 MillerRabin.cc	Miller-Rabin Primality Test (C)
 
