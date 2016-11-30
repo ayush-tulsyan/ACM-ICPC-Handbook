@@ -42,5 +42,6 @@ KMP.cc	Knuth-Morris-Pratt
 TopologicalSort.cc	Topological sort (C++)
 LCS.cc	Longest common subsequence
 MillerRabin.cc	Miller-Rabin Primality Test (C)
+BinSearch.cc 	Binary Search
 
 [Extra]
