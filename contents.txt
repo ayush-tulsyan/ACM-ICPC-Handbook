@@ -10,9 +10,11 @@ MinCut.cc	Global min-cut
 [Geometry]
 ConvexHull.cc	Convex hull
 Geometry.cc	Miscellaneous geometry
+Delaunay.cc	Delaunay Triangulation
 
 [Numerical algorithms]
 FFT_new.cc	Fast Fourier transform
+Euclid.cc	Euclid and Fermat's Theorem
 sieve.cc	Sieve for Prime Numbers
 FastExpo.cc	Fast exponentiation
 Simplex.cc	Simplex Algorithm, Linear Programming
