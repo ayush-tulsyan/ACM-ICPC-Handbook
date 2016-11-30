@@ -35,6 +35,7 @@ segmentTree.cc	Segment tree for range minima query
 lazyProp.cc	Lazy Propogation for Range update and Query
 ahoCurasick.cc	Aho Curasick Structure for string matching
 Tries.cc	Tries Structure for storing strings
+Treaps.cc	Treaps Data structure implementation
 
 [Miscellaneous]
 template.h	C++ template
@@ -45,5 +46,7 @@ TopologicalSort.cc	Topological sort (C++)
 LCS.cc	Longest common subsequence
 MillerRabin.cc	Miller-Rabin Primality Test (C)
 BinSearch.cc 	Binary Search
+GaussJordan.cc 	Matrix inverse and calculation of determinant
+
 
 [Extra]

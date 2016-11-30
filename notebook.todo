@@ -40,6 +40,9 @@ List of codes to put in the notebook
         ☐ Articulation Point 
         ✔ Aho-Corasick (seen at IIUM notebook) @done (16-11-30 11:24)
         ☐ SMP
+        ✔ Treaps @done (16-11-30 14:50)
+        ✔ Gauss Jordan @done (16-11-30 15:12)
+        
 
     Topics not very sure:
         ☐ Job Scheduling
@@ -47,13 +50,11 @@ List of codes to put in the notebook
         ☐ TSP        
         ☐ Burnside Lemma
         ☐ RMQ
-        ☐ Treaps
         ☐ NTT (not very sure)
         ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
         ☐ Geometry problems
         ☐ Triangulation
         ☐ Number Theory
-        ☐ Gauss Jordan
         ☐ Simplex Algorithm
         ☐ KD tree
         ☐ Splay tree
