@@ -24,6 +24,7 @@ FastDijkstra.cc	Fast Dijkstra's algorithm
 SCC.cc	Strongly connected components
 BellmanFord.cc	Bellman Ford's algorithm
 Kruskal.cc	Minimum Spanning Tree: Kruskal
+EulerianPath.cc	Eulerian Path Algo
 FloydWarshall.cc	FloydWarshall's Algorithm
 Prim_n2.cc	Prim's Algo in $\mathcal{O}(n^2)$ time
 
