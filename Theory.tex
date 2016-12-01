@@ -487,3 +487,35 @@ not all equal to $1$, is losing iff $a_1 \oplus a_2 \oplus \dots \oplus a_n = 0$
 A position with $n$ piles of size $1$ is losing iff $n$ is \emph{odd}.
 
 % }}}
+
+% Bit Tricks {{{
+
+\Section{Bit tricks} \\
+Clearing the lowest 1 bit: \verb$x & (x - 1)$, all trailing 1's: \verb$x & (x + 1)$ \\
+Setting the lowest 0 bit: \verb$x | (x + 1)$ \\
+Enumerating subsets of a bitmask $m$:
+\verb|x=0; do { ...; x=(x+1+~m)&m; } while (x!=0);| \\
+\verb$__builtin_ctz/__builtin_clz$ returns the number of trailing/leading zero bits. \\
+\verb$__builtin_popcount(unsigned x)$ counts 1-bits (slower than table lookups). \\
+For 64-bit unsigned integer type, use the suffix `\verb$ll$', i.e. \verb$__builtin_popcountll$.
+
+% }}}
+
+% Math {{{
+\Section{Math}
+
+\Topic{Stirling's approximation}
+$z! = \Gamma(z+1) = \sqrt{2 \pi}\ z^{z+1/2}\ e^{-z}
+(1 + \frac{1}{12z} + \frac{1}{288 z^2} - \frac{139}{51840 z^3} + \dots)$
+%$\ln \Gamma(z) = \frac{1}{2} \ln(2 \pi) + (z - \frac{1}{2}) \ln z - z + \sum_{n=1}^{\infty} \frac{B_{2n}}{2n(2n-1)} z^{-(2n-1)}$.
+%$\sum = \frac{1}{12 z} - \frac{1}{360 z^3} + \frac{1}{1260 z^5} - \dots$
+
+\Topic{Taylor series}.
+$f(x) = f(a) + \frac{x-a}{1!} f'(a) + \frac{(x-a)^2}{2!} f^{(2)}(a) + \dots + \frac{(x-a)^n}{n!} f^{(n)}(a) + \dots$. \\
+$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \dots$ \\
+$\ln x = 2(a+\frac{a^3}{3}+\frac{a^5}{5}+\dots)$, where $a=\frac{x-1}{x+1}$. $\ln x^2 = 2 \ln x$. \\
+$\arctan x = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \dots$,
+$\arctan x = \arctan c + \arctan \frac{x-c}{1+xc}$ (e.g c=.2) \\
+$\pi = 4 \arctan 1$, $\pi = 6 \arcsin \frac{1}{2}$
+
+% }}}
