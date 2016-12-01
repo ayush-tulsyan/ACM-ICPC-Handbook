@@ -6,8 +6,26 @@
 
 \begin{tabular}{l|l|l}
 	funcName(s)	&	return type and arguements	&	Details	\\
-	all\_of, any\_of, none\_of	& bool funcName(it first, it last, UnaryOredicate)	&	Test for conditions in the given range	\\
+	all\_of, any\_of, none\_of	& bool funcName(it first, it last, [UnaryPredicate])	&	Test for conditions in the given range	\\
 	for\_each 	&	fn funcName(it first, it last, Function fn) &	executes function fn with arguements as elements in the range \\
 	find, find\_if, find\_if\_not	&	it funcName(it first, it last, T val (or) Function fn)	&	returns iterator to first element which is equal to/satisfies fn/dissatisfies fn \\
+
+\end{tabular}
+
+\Topic{Modifiers}
+% http://www.cplusplus.com/reference/algorithm/?kw=algorithm
+
+\Topic{Partitions}
+
+\begin{tabular}{l|l|l}
+    partition   &   iter partition (it first, it last, UnaryPredicate)  &   Reaaranges the range such that all elements which satisfy the predicate are before which do not, returns an iter to first which doesn't \\
+    stable_partition    &   Same as above   &   same as above but stable \\
+\end{tabular}
+
+\Topic{Sorting}
+
+\begin{tabular}{l|l|l}
+    sort, stable_sort   &   void funcName(it first, it second, [mycompare])   &   Sorts/stably sorts with/out mycompare function, mycompare should return true for a<b if sorting is required in increasing order \\
+    partial_sort    &   void partial_sort(it first, it middle, it last, [mycompare])    &   partitions about the middle position (similar to partition used in median look-up) elements left to middle are sorted \\
 
 \end{tabular}
