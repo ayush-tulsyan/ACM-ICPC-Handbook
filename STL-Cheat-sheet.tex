@@ -1,5 +1,38 @@
 \section{STL Cheat Sheet}
 
+\Section{Containers}
+
+\Topic{map}
+
+\begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
+    constructor &   map\textless Key, T, [mycompare]\textgreater     &   initialize through a range(of map), another map or iteratively \\
+    swap    &   void swap(map\& x)   &   Swaps the contents of two maps in $\mathcal{O}(1)$ time. \\
+    emplace\_hint    &   emplace\_hint(it, key, T)    &   Insert using the hint, good hint may mean $\mathcal{O}(1)$  \\
+    lower\_bound &   lower\_bound(Key k)  &   Returns an iterator pointing to the first element in the container whose key is not considered to go before k \\
+    upper\_bound &   upper\_bound(Key k)  &   Returns an iterator pointing to the first element in the container whose key is considered to go after k. 
+\end{tabular}
+
+from an iterator, access it as an pair, first is key, other is value, mycompare gets the Keys as input \\
+begin, end, rbegin, rend, empty, size, operator[], insert, delete, find ...
+
+\Topic{queue} \\
+empty, size, front, back, push, pop, swap(O(1))(c++11) ...
+
+\Topic{priority\_queue}
+\begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
+    constructor &   priority\_queue\textless T, [vector]\textless int\textgreater ], [mycompare]\textgreater    &   iteratively, range  \\
+\end{tabular}
+
+empty, size, top, push, pop, swap(O(1))(c++11) ...
+
+\Topic{Set} \\
+Construct using range, iteratively, another set, using a mycompare \\
+begin, end, empty, size, insert, erase, swap, clear, emplace(\_hint), find, count, (lower\_bound, upper\_bound)(refer map for clarification) ... 
+
+\Topic{Vector} \\
+Construct iteratively, by range, by value and length, by another vector \\
+operator=, begin, end, size, empty, front, back, push\_back, pop\_back, insert(at any position using iterators), erase, swap, clear ...
+
 \Section{Algorithms}
 
 \Topic{Non-modifying sequential operations}
@@ -25,7 +58,7 @@
 \Topic{Sorting}
 
 \begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
-    sort, stable\_sort   &   void funcName(it first, it second, [mycompare])   &   Sorts/stably sorts with/out mycompare function, mycompare should return true for a<b if sorting is required in increasing order \\
+    sort, stable\_sort   &   void funcName(it first, it second, [mycompare])   &   Sorts/stably sorts with/out mycompare function, mycompare should return true for a\textless b if sorting is required in increasing order \\
     partial\_sort    &   void partial\_sort(it first, it middle, it last, [mycompare])    &   partitions about the middle position (similar to partition used in median look-up) elements left to middle are sorted \\
 
 \end{tabular}
