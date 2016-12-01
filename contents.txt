@@ -38,6 +38,7 @@ Blossom.cc	Edmond's Algorithm for finding Aborescence (MST for a directed graph)
 [Data structures]
 SuffixArray.cc	Suffix array
 BIT.cc	Binary Indexed Tree
+BIT2D.cc	BIT for 2-D plane questions
 LCA.cc	Lowest common ancestor
 segmentTree.cc	Segment tree for range minima query
 lazyProp.cc	Lazy Propogation for Range update and Query
@@ -45,7 +46,6 @@ ahoCurasick.cc	Aho Curasick Structure for string matching
 Tries.cc	Tries Structure for storing strings
 Treaps.cc	Treaps Data structure implementation
 RMQ.cc	Range minima query in O(1) tiime using lookup matrix
-
 
 [Miscellaneous]
 template.h	C++ template

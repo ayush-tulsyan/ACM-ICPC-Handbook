@@ -42,6 +42,9 @@ List of codes to put in the notebook
         ✔ Gauss Jordan @done (16-11-30 15:12)
         ✔ Euclid's & Fermat's Theorems @done (16-11-30 19:37)
         ✔ Playing with dates @done (16-11-30 19:37)
+        ✔ Constraint Satisfaction Problem @done (16-12-01 08:57)
+        ☐ Big Integers Java
+        ☐ Big Integers Python
         ☐ Theory
             ☐ game theory
             ☐ Sets, maps, iterators etc 
@@ -49,26 +52,23 @@ List of codes to put in the notebook
             ☐ Number Theory
                 ☐ Catalan
                 ☐ Chinese Remainder Theorem
-                ☐ 
             ☐ STL (Stting Stream,sort, lower bound, and all functions)
             ☐ Bit manipulation
-            ☐ List of primes and other related numbers    
+            ☐ List of primes and other related numbers
 
     Topics not very sure:
-        ☐ Job Scheduling
+        ☐ Tree traversal( in order, pre order and post order)
         ☐ Closest pair of points
         ☐ TSP        
         ✔ RMQ @done (16-12-01 08:49)
-        ☐ NTT (not very sure)
         ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
-        ☐ Geometry problems
+        ☐ Geometry problems (https://github.com/emiraga/cat-us-trophy/tree/master/notebook/src/geom)
         ✔ Triangulation @done (16-11-30 19:37)
         ✔ Simplex Algorithm @done (16-11-30 15:51)
         ☐ Knapsack
-        ☐ isPrime function
+        ✔ isPrime function @done (16-12-01 08:57)
         ✔ Edmond's Algorithm( Directed MST, IIUM notebook blossom.cpp ) @done (16-12-01 08:33)
         ☐ Z-Algorithm
-        ☐ misoff
         ☐ Voronoi Diagrams
         ☐ Reduced Row Echlon Form 
         ☐ Rabin Karp or RK (Hashing of string)
