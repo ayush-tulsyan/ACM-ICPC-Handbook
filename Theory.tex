@@ -331,3 +331,157 @@ The $r$-th fow of the matrix is $A[r]$, $A[next[r]]$, $A[next[next[r]]]$, ...
 \Topic{Huffman's algorithm}.  Start with a forest, consisting of isolated
 vertices.  Repeatedly merge two trees with the lowest weights.
 % }}}
+
+% Graph Theory {{{
+\Section{Graph Theory}
+
+\Topic{Euler's theorem}. For any planar graph, $V - E + F = 1 + C$,
+where $V$ is the number of graph's vertices, $E$ is the number of edges,
+$F$ is the number of faces in graph's planar drawing, and $C$ is the number
+of connected components.  Corollary: $V - E + F = 2$ for a 3D polyhedron.
+
+%\Topic{Schlafli's}. A convex polyhedron in $R^n$, which has $N_0$ vertices, $N_1$ edges,
+%$N_i$ $i$-dimensional faces, satisfies: $N_0-N_1+N_2-\dots=1-(-1)^n$.
+
+\Topic{Vertex covers and independent sets}.
+Let $M$, $C$, $I$ be a max matching, a min vertex cover, and a max independent set.
+Then $|M| \le |C| = N - |I|$, with equality for bipartite graphs.
+Complement of an MVC is always a MIS, and vice versa.
+Given a bipartite graph with partitions $(A, B)$, build a network:
+connect source to $A$, and $B$ to sink with edges of capacities, equal to
+the corresponding nodes' weights, or $1$ in the unweighted case.
+Set capacities of the original graph's edges to the infinity.
+Let $(S,T)$ be a minimum $s$-$t$ cut.
+Then a maximum(-weighted) independent set is $I = (A \cap S) \cup (B \cap T)$,
+and a minimum(-weighted) vertex cover is $C = (A \cap T) \cup (B \cap S)$.
+
+\Topic{Matrix-tree theorem}.
+Let matrix $T = [t_{ij}]$, where $t_{ij}$ is the number of multiedges
+between $i$ and $j$, for $i \ne j$, and $t_{ii} = -\mbox{deg}_i$.
+Number of spanning trees of a graph is equal to the determinant of
+a matrix obtained by deleting any $k$-th row and $k$-th column from $T$.
+%If $G$ is a multigraph and $e$ is an edge of $G$, then the number $\tau(G)$ of
+%spanning trees of $G$ satisfies recurrence $\tau(G) = \tau(G-e) + \tau(G/e)$,
+%when $G-e$ is the multigraph obtained by deleting $e$, and $G/e$ is
+%the contraction of $G$ by $e$ (multiple edges arising from the contraction
+%are preserved.)
+
+\Topic{Euler tours}.
+Euler tour in an undirected graph exists iff the graph is connected and each
+vertex has an even degree.  Euler tour in a directed graph exists iff in-degree
+of each vertex equals its out-degree, and underlying undirected graph is connected.
+%Open Euler path exists if it's possible to make the graph Eulerian by adding a single edge.
+Construction:
+\vspace{-5mm}
+\begin{verbatim}
+    doit(u):
+      for each edge e = (u, v) in E, do: erase e, doit(v)
+      prepend u to the list of vertices in the tour
+\end{verbatim}
+\vspace{-2mm}
+
+\Topic{Stable marriages problem}.
+While there is a free man $m$: let $w$ be the most-preferred woman to whom he
+has not yet proposed, and propose $m$ to $w$. If $w$ is free, or is engaged to someone whom
+she prefers less than $m$, match $m$ with $w$, else deny proposal.
+
+\Topic{Stoer-Wagner's min-cut algorithm}.
+Start from a set $A$ containing an arbitrary vertex.
+While $A \ne V$, add to $A$ the most tightly connected vertex
+($z \notin A$ such that $\sum_{x \in A} w(x, z)$ is maximized.)
+Store cut-of-the-phase (the cut between the last added vertex and rest of
+the graph), and merge the two vertices added last.  Repeat until the graph
+is contracted to a single vertex.  Minimum cut is one of the cuts-of-the-phase.
+
+\Topic{Tarjan's offline LCA algorithm}. (Based on DFS and union-find structure.)
+\begin{verbatim}
+    DFS(x):
+      ancestor[Find(x)] = x
+      for all children y of x:
+         DFS(y); Union(x, y); ancestor[Find(x)] = x
+      seen[x] = true
+      for all queries {x, y}:
+        if seen[y] then output "LCA(x, y) is ancestor[Find(y)]"
+\end{verbatim}
+
+\Topic{Strongly-connected components}. Kosaraju's algorithm. \\
+1. Let $G^T$ be a transpose $G$ (graph with reversed edges.) \\
+1. Call DFS($G^T$) to compute finishing times $f[u]$ for each vertex $u$. \\
+3. For each vertex $u$, in the order of decreasing $f[u]$, perform DFS($G$, $u$). \\
+4. Each tree in the 3rd step's DFS forest is a separate SCC.
+
+\Topic{2-SAT}. Build an implication graph with 2 vertices for each
+variable -- for the variable and its inverse; for each clause $x \lor y$
+add edges $({\overline x}, y)$ and $({\overline y}, x)$.
+The formula is satisfiable iff $x$ and ${\overline x}$ are in distinct SCCs,
+for all $x$. To find a satisfiable assignment, consider the graph's SCCs
+in topological order from sinks to sources (i.e. Kosaraju's last step), assigning `true' to
+all variables of the current SCC (if it hasn't been previously
+assigned `false'), and `false' to all inverses.
+
+\Topic{Randomized algorithm for non-bipartite matching}.
+Let $G$ be a simple undirected graph with even $|V(G)|$.
+Build a matrix $A$, which for each edge $(u,v) \in E(G)$ has
+$A_{i,j}=x_{i,j}$, $A_{j,i}=-x_{i,j}$, and is zero elsewhere.
+Tutte's theorem: $G$ has a perfect matching iff $\det G$ (a multivariate
+polynomial) is identically zero.
+Testing the latter can be done by computing the determinant for
+a few random values of $x_{i,j}$'s over some field.
+(e.g. $Z_p$ for a sufficiently large prime $p$)
+
+\Topic{Prufer code of a tree}.
+Label vertices with integers $1$ to $n$.
+Repeatedly remove the leaf with the smallest label, and output its only
+neighbor's label, until only one edge remains. The sequence has
+length $n-2$.  Two isomorphic trees have the same sequence, and every sequence
+of integers from $1$ and $n$ corresponds to a tree.
+Corollary: the number of labelled trees with $n$ vertices is $n^{n-2}$.  % Cayley's theorem
+
+\Topic{Erdos-Gallai theorem}.
+A sequence of integers $\{ d_1, d_2, \dots, d_n \}$,
+with $n-1 \ge d_1 \ge d_2 \ge \dots \ge d_n \ge 0$ is a degree sequence
+of some undirected simple graph iff $\sum d_i$ is even and
+$d_1 + \dots + d_k \le k(k-1) + \sum_{i=k+1}^n \min(k, d_{i})$
+for all $k=1,2,\dots,n-1$.
+
+% }}}
+
+% Games {{{
+
+\Section{Games}
+
+\Topic{Grundy numbers}.
+For a two-player, normal-play (last to move wins) game on a graph $(V,E)$:
+$G(x) = \mbox{mex}(\{ G(y) : (x, y) \in E \})$,
+where $\mbox{mex}(S) = \min \{ n \ge 0: n \not\in S \}$.
+$x$ is losing iff $G(x) = 0$.
+
+\Topic{Sums of games}.
+
+\vspace{-4mm}
+\begin{itemize}
+  \item
+    \emph{Player chooses a game and makes a move in it}.
+    Grundy number of a position is xor of grundy numbers of positions in summed games.
+  \item
+    \emph{Player chooses a non-empty subset of games (possibly, all) and makes moves in all of them}.
+    A position is losing iff each game is in a losing position.
+  \item
+    \emph{Player chooses a proper subset of games (not empty and not all),
+        and makes moves in all chosen ones.}
+    A position is losing iff grundy numbers of all games are equal.
+  \item
+    \emph{Player must move in all games, and loses if can't move in some game}.
+    A position is losing if any of the games is in a losing position.
+\end{itemize}
+% http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=algorithmGames
+
+\vspace{-3mm}
+
+\Topic{Mis\`{e}re Nim}.
+A position with pile sizes $a_1, a_2, \dots, a_n \ge 1$,
+not all equal to $1$, is losing iff $a_1 \oplus a_2 \oplus \dots \oplus a_n = 0$
+(like in normal nim.)
+A position with $n$ piles of size $1$ is losing iff $n$ is \emph{odd}.
+
+% }}}
