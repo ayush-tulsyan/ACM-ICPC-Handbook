@@ -69,8 +69,8 @@ List of codes to put in the notebook
 
     Topics not very sure:
         ☐ Tree traversal( in order, pre order and post order)
-        ☐ Closest pair of points
-        ☐ TSP        
+        ✔ Closest pair of points @done (16-12-01 16:58)
+        ✘ TSP         @cancelled (16-12-01 16:58)
         ✔ RMQ @done (16-12-01 08:49)
         ✔ Bipartite matchig (Non-bipartote, max bipartite, etc) @done (16-12-01 15:37)
         ☐ Geometry problems (https://github.com/emiraga/cat-us-trophy/tree/master/notebook/src/geom)
@@ -80,7 +80,7 @@ List of codes to put in the notebook
         ✔ isPrime function @done (16-12-01 08:57)
         ✔ Edmond's Algorithm( Directed MST, IIUM notebook blossom.cpp ) @done (16-12-01 08:33)
         ✔ Z-Algorithm @done (    16-12-01 13:45)
-        ☐ Voronoi Diagrams
+        ✘ Voronoi Diagrams @cancelled (16-12-01 16:58)
         ✘ Reduced Row Echlon Form  @cancelled (16-12-01 13:45)
         ✘ Rabin Karp or RK (Hashing of string) @cancelled (16-12-01 13:45)
     Reference list:  
