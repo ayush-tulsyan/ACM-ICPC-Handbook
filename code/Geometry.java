@@ -127,13 +127,13 @@ public class JavaGeometry {
         // Finally, some useful things we didn't use in this example:
         //
         //   Ellipse2D.Double ellipse = new Ellipse2D.Double (double x, double y, 
-        //                                                    double w, double h);
+        //                                 double w, double h);
         //
         //     creates an ellipse inscribed in box with bottom-left corner (x,y)
         //     and upper-right corner (x+y,w+h)
         // 
         //   Rectangle2D.Double rect = new Rectangle2D.Double (double x, double y, 
-        //                                                     double w, double h);
+        //                                 double w, double h);
         //
         //     creates a box with bottom-left corner (x,y) and upper-right 
         //     corner (x+y,w+h)

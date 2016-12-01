@@ -4,7 +4,7 @@
 
 \Topic{Non-modifying sequential operations}
 
-\begin{tabular}{p{2cm}|p{5cm}|p{6cm}}
+\begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
 	funcName(s)	&	return type and arguements	&	Details	\\
 	all\_of, any\_of, none\_of	& bool funcName(it first, it last, [UnaryPredicate])	&	Test for conditions in the given range	\\
 	for\_each 	&	fn funcName(it first, it last, Function fn) &	executes function fn with arguements as elements in the range \\
@@ -17,14 +17,14 @@
 
 \Topic{Partitions}
 
-\begin{tabular}{p{2cm}|p{5cm}|p{6cm}}
+\begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
     partition   &   iter partition (it first, it last, UnaryPredicate)  &   Reaaranges the range such that all elements which satisfy the predicate are before which do not, returns an iter to first which doesn't \\
     stable\_partition    &   Same as above   &   same as above but stable \\
 \end{tabular}
 
 \Topic{Sorting}
 
-\begin{tabular}{p{2cm}|p{5cm}|p{6cm}}
+\begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
     sort, stable\_sort   &   void funcName(it first, it second, [mycompare])   &   Sorts/stably sorts with/out mycompare function, mycompare should return true for a<b if sorting is required in increasing order \\
     partial\_sort    &   void partial\_sort(it first, it middle, it last, [mycompare])    &   partitions about the middle position (similar to partition used in median look-up) elements left to middle are sorted \\
 

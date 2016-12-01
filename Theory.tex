@@ -52,8 +52,7 @@ Number of lattice paths from $(0,0)$ to $(a,b)$, restricted to east and north
 steps: ${a+b \choose a}$
 
 \Topic{Multinomial theorem}.
-$(a_1+\dots+a_k)^n = \sum {n \choose n_1,\dots,n_k}\
-a_1^{n_1} \dots a_k^{n_k}$,
+$(a_1+\dots+a_k)^n = \sum {n \choose n_1,\dots,n_k} a_1^{n_1} \dots a_k^{n_k}$,
 where $n_i \ge 0$ and $\sum n_i=n$. \\
 $${n \choose n_1,\dots,n_k} = M(n_1,\dots,n_k) = \frac{n!}{n_1! \dots n_k!}$$
 $$M(a,\dots,b,c,\dots) = M(a+\dots+b,c,\dots) M(a,\dots,b)$$
@@ -155,7 +154,6 @@ To find some solution, let $b=\gcd(a_2, \dots, a_n)$,
 solve $a_1 x_1 + by = c$, and iterate with $a_2 x_2 + \dots = y$.
 
 \Topic{Extended GCD}
-\vspace{-5mm}
 \begin{verbatim}
 // Finds g = gcd(a,b) and x, y such that ax+by=g.
 // Bounds: |x|<=b+1, |y|<=a+1.
@@ -163,7 +161,6 @@ void gcdext(int &g, int &x, int &y, int a, int b)
 { if (b == 0) { g = a; x = 1; y = 0; }
   else        { gcdext(g, y, x, b, a % b); y = y - (a / b) * x; } }
 \end{verbatim}
-\vspace{-3mm}
 
 Multiplicative inverse of $a$ modulo $m$:
 $x$ in $ax + my = 1$, or $a^{\phi(m)-1} \pmod{m}$.
@@ -493,7 +490,7 @@ A position with $n$ piles of size $1$ is losing iff $n$ is \emph{odd}.
 \Section{Bit tricks}
 Clearing the lowest 1 bit: \verb$x & (x - 1)$, all trailing 1's: \verb$x & (x + 1)$ \\
 Setting the lowest 0 bit: \verb$x | (x + 1)$ \\
-Enumerating subsets of a bitmask $m$:
+Enumerating subsets of a bitmask $m$: \\
 \verb|x=0; do { ...; x=(x+1+~m)&m; } while (x!=0);| \\
 \verb$__builtin_ctz/__builtin_clz$ returns the number of trailing/leading zero bits. \\
 \verb$__builtin_popcount(unsigned x)$ counts 1-bits (slower than table lookups). \\
