@@ -23,7 +23,7 @@ List of codes to put in the notebook
         ✔ BFS, DFS  @done (16-11-29 20:43)
         ✔ Topological Sort @done (16-11-29 05:39)
         ✔ Binary Search @done (16-11-30 12:21)
-        ☐ Hashing
+        ✔ Hashing @done (16-12-01 15:41)
         ✔ Kruskal's (C++) @done (16-11-29 18:56)
         ✔ Bellman Ford @done (16-11-29 05:45)
         ✔ Min Cut @done (16-11-29 05:43)
@@ -35,7 +35,7 @@ List of codes to put in the notebook
         ✔ LCS @done (16-11-29 05:41)
         ✔ Miscellaneous Geometry @done (16-11-29 05:47)
         ✔ Eulerian Path @done (16-11-30 16:00)
-        ☐ Articulation Point
+        ✔ Articulation Point @done (16-12-01 16:06)
         ✔ Aho-Corasick (seen at IIUM notebook) @done (16-11-30 11:24)
         ☐ SMP
         ✔ Treaps @done (16-11-30 14:50)
@@ -72,14 +72,14 @@ List of codes to put in the notebook
         ☐ Closest pair of points
         ☐ TSP        
         ✔ RMQ @done (16-12-01 08:49)
-        ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
+        ✔ Bipartite matchig (Non-bipartote, max bipartite, etc) @done (16-12-01 15:37)
         ☐ Geometry problems (https://github.com/emiraga/cat-us-trophy/tree/master/notebook/src/geom)
         ✔ Triangulation @done (16-11-30 19:37)
         ✔ Simplex Algorithm @done (16-11-30 15:51)
         ☐ Knapsack
         ✔ isPrime function @done (16-12-01 08:57)
         ✔ Edmond's Algorithm( Directed MST, IIUM notebook blossom.cpp ) @done (16-12-01 08:33)
-        ✔ Z-Algorithm @done (16-12-01 13:45)
+        ✔ Z-Algorithm @done (    16-12-01 13:45)
         ☐ Voronoi Diagrams
         ✘ Reduced Row Echlon Form  @cancelled (16-12-01 13:45)
         ✘ Rabin Karp or RK (Hashing of string) @cancelled (16-12-01 13:45)

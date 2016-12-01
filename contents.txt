@@ -6,6 +6,7 @@
 [Combinatorial optimization]
 Dinic.cc	Sparse max-flow(aka Modified Ford Fulkerson)
 MinCut.cc	Global min-cut
+min_cost_max_flow.cc	min cut along with mini
 
 [Geometry]
 ConvexHull.cc	Convex hull
@@ -35,6 +36,8 @@ EulerianPath.cc	Eulerian Path Algo
 FloydWarshall.cc	FloydWarshall's Algorithm
 Prim_n2.cc	Prim's Algo in $\mathcal{O}(n^2)$ time
 Blossom.cc	MST for a directed graph
+MaxBipartiteMatching.cc	Maximum Matching in a Bipartite graphss
+ArticulationPoint.cc	Articulation Point in a Graph
 
 [Data structures]
 BIT.cc	Binary Indexed Tree
@@ -62,5 +65,6 @@ MillerRabin.cc	Miller-Rabin Primality Test
 BinSearch.cc	Binary Search
 Dates.cc	Playing with dates
 regex.java	Regular expressions handling using JAVA
+Hash.cc	Hashing
 
 [Extra]
