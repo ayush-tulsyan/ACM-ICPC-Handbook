@@ -1,0 +1,13 @@
+\section{STL Cheat Sheet}
+
+\Section{Algorithms}
+
+\Topic{Non-modifying sequential operations}
+
+\begin{tabular}{l|l|l}
+	funcName(s)	&	return type and arguements	&	Details	\\
+	all\_of, any\_of, none\_of	& bool funcName(it first, it last, UnaryOredicate)	&	Test for conditions in the given range	\\
+	for\_each 	&	fn funcName(it first, it last, Function fn) &	executes function fn with arguements as elements in the range \\
+	find, find\_if, find\_if\_not	&	it funcName(it first, it last, T val (or) Function fn)	&	returns iterator to first element which is equal to/satisfies fn/dissatisfies fn \\
+
+\end{tabular}
