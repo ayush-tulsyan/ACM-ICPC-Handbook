@@ -19,6 +19,7 @@ sieve.cc	Sieve for Prime Numbers
 FastExpo.cc	Fast exponentiation
 Simplex.cc	Simplex Algorithm, Linear Programming
 CSP.cc	Constraint Satisfaction Problem
+isPrime.cc	O(sqrt(n)) method for checking primality
 
 [Graph algorithms]
 BFS.cc	BFS
