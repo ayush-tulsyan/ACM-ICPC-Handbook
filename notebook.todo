@@ -47,6 +47,9 @@ List of codes to put in the notebook
             ☐ Sets, maps, iterators etc 
             ☐ Burnside Lemma
             ☐ Number Theory
+                ☐ Catalan
+                ☐ Chinese Remainder Theorem
+                ☐ 
             ☐ STL (Stting Stream,sort, lower bound, and all functions)
             ☐ Bit manipulation
             ☐ List of primes and other related numbers    
@@ -55,14 +58,12 @@ List of codes to put in the notebook
         ☐ Job Scheduling
         ☐ Closest pair of points
         ☐ TSP        
-        ☐ RMQ
+        ✔ RMQ @done (16-12-01 08:49)
         ☐ NTT (not very sure)
         ☐ Bipartite matchig (Non-bipartote, max bipartite, etc)
         ☐ Geometry problems
         ✔ Triangulation @done (16-11-30 19:37)
         ✔ Simplex Algorithm @done (16-11-30 15:51)
-        ☐ KD tree
-        ☐ Splay tree
         ☐ Knapsack
         ☐ isPrime function
         ✔ Edmond's Algorithm( Directed MST, IIUM notebook blossom.cpp ) @done (16-12-01 08:33)

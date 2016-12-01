@@ -43,6 +43,8 @@ lazyProp.cc	Lazy Propogation for Range update and Query
 ahoCurasick.cc	Aho Curasick Structure for string matching
 Tries.cc	Tries Structure for storing strings
 Treaps.cc	Treaps Data structure implementation
+RMQ.cc	Range minima query in O(1) tiime using lookup matrix
+
 
 [Miscellaneous]
 template.h	C++ template
