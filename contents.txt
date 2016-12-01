@@ -67,5 +67,7 @@ BinSearch.cc	Binary Search
 Dates.cc	Playing with dates
 regex.java	Regular expressions handling using JAVA
 Hash.cc	Hashing
+Mobius.cc	Mobius function
+Mo.cc	Mo's Algorithm
 
 [Extra]
