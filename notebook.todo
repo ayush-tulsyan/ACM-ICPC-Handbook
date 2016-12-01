@@ -47,15 +47,15 @@ List of codes to put in the notebook
         ☐ Big Integers Python
         ✔ BIT 2D @done (16-12-01 09:25)
         ☐ Theory
-            ☐ game theory
+            ✔ game theory @done (16-12-01 13:44)
             ☐ Sets, maps, iterators etc 
-            ☐ Number Theory
+            ✔ Number Theory @done (16-12-01 13:44)
                 ✔ Extended GCD @done (16-12-01 10:05)
                 ✔ Euler's totient function @done (16-12-01 10:05)
                 ✔ Mobius inversion @done (16-12-01 10:06)
                 ✔ Pythagorean triplets @done (16-12-01 10:06)
                 ✔ Linear Diophantine  @done (16-12-01 10:08)
-            ☐ Combinatorics
+            ✔ Combinatorics @done (16-12-01 13:44)
                 ✔ Chinese Remainder Theorem @done (16-12-01 10:09)
                 ✔ Burnside Lemma @done (16-12-01 10:04)
                 ✔ Catalan @done (16-12-01 10:03)
@@ -79,10 +79,10 @@ List of codes to put in the notebook
         ☐ Knapsack
         ✔ isPrime function @done (16-12-01 08:57)
         ✔ Edmond's Algorithm( Directed MST, IIUM notebook blossom.cpp ) @done (16-12-01 08:33)
-        ☐ Z-Algorithm
+        ✔ Z-Algorithm @done (16-12-01 13:45)
         ☐ Voronoi Diagrams
-        ☐ Reduced Row Echlon Form 
-        ☐ Rabin Karp or RK (Hashing of string)
+        ✘ Reduced Row Echlon Form  @cancelled (16-12-01 13:45)
+        ✘ Rabin Karp or RK (Hashing of string) @cancelled (16-12-01 13:45)
     Reference list:  
          ☐ for some pseudocodes and explanations, https://github.com/emiraga/cat-us-trophy/blob/master/notebook/notebook.pdf
          ☐ stanford university notebook http://home.iitk.ac.in/~sshekh/codes/notebook.html (2011- 2012)

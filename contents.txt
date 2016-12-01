@@ -13,7 +13,6 @@ Geometry.cc	Miscellaneous geometry
 Geometry.java	Geometry using Java Libraries
 Delaunay.cc	Delaunay Triangulation
 
-
 [Numerical algorithms]
 FFT_new.cc	Fast Fourier transform
 Euclid.cc	Euclid and Fermat's Theorem
@@ -38,22 +37,25 @@ Prim_n2.cc	Prim's Algo in $\mathcal{O}(n^2)$ time
 Blossom.cc	MST for a directed graph
 
 [Data structures]
-SuffixArray.cc	Suffix array
 BIT.cc	Binary Indexed Tree
 BIT2D.cc	BIT for 2-D plane questions
 LCA.cc	Lowest common ancestor
 segmentTree.cc	Segment tree for range minima query
 lazyProp.cc	Lazy Propogation for Range update and Query
+RMQ.cc	Range minima query in O(1) tiime using lookup matrix
+
+[String Manipulation]
+KMP.cc	Knuth-Morris-Pratt
+SuffixArray.cc	Suffix array
 ahoCurasick.cc	Aho Curasick Structure for string matching
 Tries.cc	Tries Structure for storing strings
 Treaps.cc	Treaps Data structure implementation
-RMQ.cc	Range minima query in O(1) tiime using lookup matrix
+zAlgo.cc	Z's Algorithm, KMP's Bro
 
 [Miscellaneous]
 template.h	C++ template
 IO.cc	C++ input/output
 LongestIncreasingSubsequence.cc	Longest increasing subsequence
-KMP.cc	Knuth-Morris-Pratt
 LCS.cc	Longest common subsequence
 GaussJordan.cc	Gauss Jordan
 MillerRabin.cc	Miller-Rabin Primality Test
