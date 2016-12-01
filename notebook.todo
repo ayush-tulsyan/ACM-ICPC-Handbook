@@ -35,7 +35,7 @@ List of codes to put in the notebook
         ✔ LCS @done (16-11-29 05:41)
         ✔ Miscellaneous Geometry @done (16-11-29 05:47)
         ✔ Eulerian Path @done (16-11-30 16:00)
-        ☐ Articulation Point 
+        ☐ Articulation Point
         ✔ Aho-Corasick (seen at IIUM notebook) @done (16-11-30 11:24)
         ☐ SMP
         ✔ Treaps @done (16-11-30 14:50)
@@ -45,13 +45,24 @@ List of codes to put in the notebook
         ✔ Constraint Satisfaction Problem @done (16-12-01 08:57)
         ☐ Big Integers Java
         ☐ Big Integers Python
+        ✔ BIT 2D @done (16-12-01 09:25)
         ☐ Theory
             ☐ game theory
             ☐ Sets, maps, iterators etc 
-            ☐ Burnside Lemma
             ☐ Number Theory
-                ☐ Catalan
-                ☐ Chinese Remainder Theorem
+                ✔ Extended GCD @done (16-12-01 10:05)
+                ✔ Euler's totient function @done (16-12-01 10:05)
+                ✔ Mobius inversion @done (16-12-01 10:06)
+                ✔ Pythagorean triplets @done (16-12-01 10:06)
+                ✔ Linear Diophantine  @done (16-12-01 10:08)
+            ☐ Combinatorics
+                ✔ Chinese Remainder Theorem @done (16-12-01 10:09)
+                ✔ Burnside Lemma @done (16-12-01 10:04)
+                ✔ Catalan @done (16-12-01 10:03)
+                ✔ Derangements @done (16-12-01 10:03)
+                ✔ Stiring numbers @done (16-12-01 10:04)
+                ✔ Bell numbers @done (16-12-01 10:04)
+
             ☐ STL (Stting Stream,sort, lower bound, and all functions)
             ☐ Bit manipulation
             ☐ List of primes and other related numbers
