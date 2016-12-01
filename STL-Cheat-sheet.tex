@@ -46,7 +46,17 @@ operator=, begin, end, size, empty, front, back, push\_back, pop\_back, insert(a
 \end{tabular}
 
 \Topic{Modifiers}
-% http://www.cplusplus.com/reference/algorithm/?kw=algorithm
+
+\begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
+	copy   &   iter copy (it first, it last, it result)   &   Copies the elements in the range [first,last) into the range beginning at result \\
+	copy\_n   &   iter copy\_n (it first, size n, it result)   &   Copies the first n elements from the range beginning at first into the range beginning at result \\
+	swap   &   \textless class T\textgreater void swap (T\&a, T\&b)   &   Exchanges the values of a and b \\
+	replace   &   \textless class T\textgreater void replace (it first, it last, const T\& ov, const T\& nv)   &   Assigns nv to all the elements in the range [first,last) that compare equal to ov. Uses == to compare \\
+	fill   &   \textless class T\textgreater void fill (it first, it last, const T\& val)   &   Assigns val to all the elements in the range [first,last) \\
+	fill\_n   &   \textless class T\textgreater void fill\_n (it first, size n, const T\& val)   &    assigns val to the first n elements of the sequence pointed by first \\
+	remove   &   \textless class T\textgreater iter remove (it first, it last, const T\& val)   &   transforms the range [first,last) into a range with all the elements that compare equal to val removed, and returns an iterator to the new end of that range. Uses == to compare \\
+\end{tabular}
+
 
 \Topic{Partitions}
 
