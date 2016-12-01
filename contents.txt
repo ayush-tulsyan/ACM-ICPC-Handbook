@@ -10,7 +10,9 @@ MinCut.cc	Global min-cut
 [Geometry]
 ConvexHull.cc	Convex hull
 Geometry.cc	Miscellaneous geometry
+Geometry.java	Geometry using Java Libraries
 Delaunay.cc	Delaunay Triangulation
+
 
 [Numerical algorithms]
 FFT_new.cc	Fast Fourier transform
@@ -57,5 +59,6 @@ GaussJordan.cc	Gauss Jordan
 MillerRabin.cc	Miller-Rabin Primality Test
 BinSearch.cc	Binary Search
 Dates.cc	Playing with dates
+regex.java	Regular expressions handling using JAVA
 
 [Extra]
