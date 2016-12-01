@@ -9,25 +9,20 @@
 // OUTPUT:
 //     - (min cut value, nodes in half of min cut)
 
-#include <cmath>
-#include <vector>
-#include <iostream>
+#include "template.h"
 
-using namespace std;
-
-typedef vector<int> VI;
-typedef vector<VI> VVI;
+typedef vector<vi> vvi;
 
 const int INF = 1000000000;
 
-pair<int, VI> GetMinCut(VVI &weights) {
+pair<int, vi> GetMinCut(vvi &weights) {
   int N = weights.size();
-  VI used(N), cut, best_cut;
+  vi used(N), cut, best_cut;
   int best_weight = -1;
   
   for (int phase = N-1; phase >= 0; phase--) {
-    VI w = weights[0];
-    VI added = used;
+    vi w = weights[0];
+    vi added = used;
     int prev, last = 0;
     for (int i = 0; i < phase; i++) {
       prev = last;
@@ -61,13 +56,13 @@ int main() {
   for (int i = 0; i < N; i++) {
     int n, m;
     cin >> n >> m;
-    VVI weights(n, VI(n));
+    vvi weights(n, vi(n));
     for (int j = 0; j < m; j++) {
       int a, b, c;
       cin >> a >> b >> c;
       weights[a-1][b-1] = weights[b-1][a-1] = c;
     }
-    pair<int, VI> res = GetMinCut(weights);
+    pair<int, vi> res = GetMinCut(weights);
     cout << "Case #" << i+1 << ": " << res.first << endl;
   }
 }

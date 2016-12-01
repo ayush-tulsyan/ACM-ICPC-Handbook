@@ -6,7 +6,7 @@
 [Combinatorial optimization]
 Dinic.cc	Sparse max-flow(aka Modified Ford Fulkerson)
 MinCut.cc	Global min-cut
-min_cost_max_flow.cc	min cut along with mini
+min_cost_max_flow.cc	Min cut along with minimum cost
 
 [Geometry]
 ConvexHull.cc	Convex hull
@@ -38,7 +38,7 @@ Prim_n2.cc	Prim's Algo in $\mathcal{O}(n^2)$ time
 Blossom.cc	MST for a directed graph
 MaxBipartiteMatching.cc	Maximum Matching in a Bipartite graphss
 ArticulationPoint.cc	Articulation Point in a Graph
-ClosestPair.cc	Closest Pair of points in a 2-D Plane 
+ClosestPair.cc	Closest Pair of points in a 2-D Plane
 
 [Data structures]
 BIT.cc	Binary Indexed Tree

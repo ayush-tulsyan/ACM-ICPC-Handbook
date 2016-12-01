@@ -12,18 +12,21 @@
     upper\_bound &   upper\_bound(Key k)  &   Returns an iterator pointing to the first element in the container whose key is considered to go after k. 
 \end{tabular}
 
-from an iterator, access it as an pair, first is key, other is value, mycompare gets the Keys as input \\
-begin, end, rbegin, rend, empty, size, operator[], insert, delete, find ...
+from an iterator, access it as an pair, first is key, other is value, mycompare gets the keys as input.     begin, end, rbegin, rend, empty, size, operator[], insert, delete, find ...
 
 \Topic{queue} \\
 empty, size, front, back, push, pop, swap(O(1))(c++11) ...
 
-\Topic{priority\_queue}
+\Topic{priority\_queue} \\
 \begin{tabular}{p{2cm}|p{5cm}|p{5.5cm}}
     constructor &   priority\_queue\textless T, [vector]\textless int\textgreater ], [mycompare]\textgreater    &   iteratively, range  \\
 \end{tabular}
 
 empty, size, top, push, pop, swap(O(1))(c++11) ...
+
+\Topic{Deque} \\
+Construction similar to vector \\
+begin, end, size, empty, operator[], front, back, push\_front, push\_back, pop\_front, pop\_back, insert, erase, swap, clear .....
 
 \Topic{Set} \\
 Construct using range, iteratively, another set, using a mycompare \\
