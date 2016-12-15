@@ -36,7 +36,7 @@ EulerianPath.cc	Eulerian Path Algo
 FloydWarshall.cc	FloydWarshall's Algorithm
 Prim_n2.cc	Prim's Algo in $\mathcal{O}(n^2)$ time
 Blossom.cc	MST for a directed graph
-MaxBipartiteMatching.cc	Maximum Matching in a Bipartite graphss
+HopcraftKarp.cc	Maximum Matching in a Bipartite graphss
 ArticulationPoint.cc	Articulation Point in a Graph
 ClosestPair.cc	Closest Pair of points in a 2-D Plane
 
