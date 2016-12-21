@@ -1,4 +1,6 @@
-/* Bit used as 2-D structure for a 2-D plane listing the points in rectangle  */
+/* Bit used as 2-D structure for a handling update/range 
+queries in a matrix in $\log^2{n}$ time */
+
 #include "template.h"
 int bit[M][M], n;
 int sum( int x, int y ){

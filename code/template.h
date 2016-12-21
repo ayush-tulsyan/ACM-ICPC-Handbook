@@ -12,12 +12,9 @@ typedef vector <vi> vvi;
 typedef vector <ll> vl;
 typedef pair <int, int> pii;
 typedef pair <ll, ll> pll;
-typedef vector <pii> vii;
-typedef vector <pll> vll;
 
 #define F first
 #define S second
-#define uint unsigned int
 #define mp make_pair
 #define pb push_back
 #define pi 2*acos(0.0)

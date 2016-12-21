@@ -44,7 +44,7 @@ ClosestPair.cc	Closest Pair of points in a 2-D Plane
 BIT.cc	Binary Indexed Tree
 BIT2D.cc	BIT for 2-D plane questions
 LCA.cc	Lowest common ancestor
-segmentTree.cc	Segment tree for range minima query
+segTreeN.cc	Segment tree class for range minima query
 lazyProp.cc	Lazy Propogation for Range update and Query
 RMQ.cc	Range minima query in O(1) tiime using lookup matrix
 
@@ -65,7 +65,7 @@ GaussJordan.cc	Gauss Jordan
 MillerRabin.cc	Miller-Rabin Primality Test
 BinSearch.cc	Binary Search
 Dates.cc	Playing with dates
-regex.java	Regular expressions handling using JAVA
+# regex.java	Regular expressions handling using JAVA
 Hash.cc	Hashing
 Mobius.cc	Mobius function
 Mo.cc	Mo's Algorithm
