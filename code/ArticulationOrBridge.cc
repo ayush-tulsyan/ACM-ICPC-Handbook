@@ -1,10 +1,14 @@
 #include "template.h"
+
+// Array u acts as visited bool array, d stores DFN No., low
+// stores lowest DFN no reachable, par stores parent node's DFN no.
+
 int gl = 0;
 const int N = 10010;
 int u[N],d[N],low[N],par[N];
 vi G[N];
 void dfs1(int node,int dep){ //find dfs_num and dfs_low
-  u[node]=1; 
+  u[node]=1;
   d[node]=dep;low[node]=dep;
   for(int i = 0; i < G[node].size(); i++){
     int it = G[node][i];

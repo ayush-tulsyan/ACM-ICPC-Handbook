@@ -1,32 +1,33 @@
-#include<memory.h>
+#include "template.h"
+#define MAXE 1000000
+#define MAXV 100000
 struct edge{int e, nxt;};
 int V, E;
 edge e[MAXE], er[MAXE];
 int sp[MAXV], spr[MAXV];
 int group_cnt, group_num[MAXV];
 bool v[MAXV];
-int stk[MAXV];
-void fill_forward(int x)
-{
+int stk[MAXV];    // Stack, stk[0] stores size
+void fill_forward(int x) {
   int i;
   v[x]=true;
   for(i=sp[x];i;i=e[i].nxt) if(!v[e[i].e]) fill_forward(e[i].e);
   stk[++stk[0]]=x;
 }
-void fill_backward(int x)
-{
+
+void fill_backward(int x) {
   int i;
   v[x]=false;
   group_num[x]=group_cnt;
   for(i=spr[x];i;i=er[i].nxt) if(v[er[i].e]) fill_backward(er[i].e);
 }
-void add_edge(int v1, int v2) //add edge v1->v2
-{
+
+void add_edge(int v1, int v2) {     //add edge v1->v2 
   e [++E].e=v2; e [E].nxt=sp [v1]; sp [v1]=E;
   er[  E].e=v1; er[E].nxt=spr[v2]; spr[v2]=E;
 }
-void SCC()
-{
+
+void SCC() {
   int i;
   stk[0]=0;
   memset(v, false, sizeof(v));
@@ -34,4 +35,6 @@ void SCC()
   group_cnt=0;
   for(i=stk[0];i>=1;i--) if(v[stk[i]]){group_cnt++; fill_backward(stk[i]);}
 }
+
+int main() {return 0;}
 
