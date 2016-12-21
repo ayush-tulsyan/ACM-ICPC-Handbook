@@ -1,4 +1,5 @@
-// Two-phase simplex algorithm for solving linear programs of the form
+// Two-phase simplex algorithm for solving linear programs of
+// the form (c^T is c Transpose)
 //
 //     maximize     c^T x
 //     subject to   Ax <= b

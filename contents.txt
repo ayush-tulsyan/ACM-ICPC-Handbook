@@ -4,14 +4,15 @@
 #   [filename within code directory][tab character \t][subsection title]
 
 [Combinatorial optimization]
-Dinic.cc	Sparse max-flow(aka Modified Ford Fulkerson)
+Dinic.cc	Dinic's Algo for Sparse max-flow
 MinCut.cc	Global min-cut
-min_cost_max_flow.cc	Min cut along with minimum cost
+minCostBipartite.cc	Min cost Bipartite Matching
+MinCostMaxFlow.cc	Min cost Max Flow
 
 [Geometry]
 ConvexHull.cc	Convex hull
 Geometry.cc	Miscellaneous geometry
-Geometry.java	Geometry using Java Libraries
+# Geometry.java	Geometry using Java Libraries
 Delaunay.cc	Delaunay Triangulation
 
 [Numerical algorithms]
@@ -21,11 +22,10 @@ sieve.cc	Sieve for Prime Numbers
 FastExpo.cc	Fast exponentiation
 Simplex.cc	Simplex Algorithm, Linear Programming
 CSP.cc	Constraint Satisfaction Problem
-isPrime.cc	O(sqrt(n)) method for checking primality
 
 [Graph algorithms]
-BFS.cc	BFS
-DFS.cc	DFS
+# BFS.cc	BFS
+# DFS.cc	DFS
 FastDijkstra.cc	Fast Dijkstra's algorithm
 TopologicalSort.cc	Topological sort (C++)
 UnionFind.cc	Union-find set(aka DSU)

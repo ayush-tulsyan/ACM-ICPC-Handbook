@@ -1,6 +1,9 @@
 // Slow but simple Delaunay triangulation. Does not handle
 // degenerate cases (from O'Rourke, Computational Geometry in C)
 //
+// Generates a Tiangulation DT(P) such that no point in P in
+// inside any Triangle in DT(P)
+//
 // Running time: O(n^4)
 //
 // INPUT:    x[] = x-coordinates
@@ -35,8 +38,8 @@ vector<triple> delaunayTriangulation(vector<T>& x, vector<T>& y) {
         double zn = (x[j]-x[i])*(y[k]-y[i]) - (x[k]-x[i])*(y[j]-y[i]);
         bool flag = zn < 0;
         for (int m = 0; flag && m < n; m++)
-        flag = flag && ((x[m]-x[i])*xn + 
-            (y[m]-y[i])*yn + 
+        flag = flag && ((x[m]-x[i])*xn +
+            (y[m]-y[i])*yn +
             (z[m]-z[i])*zn <= 0);
         if (flag) ret.push_back(triple(i, j, k));
       }
@@ -50,10 +53,10 @@ int main() {
   T ys[]={0, 1, 0, 0.9};
   vector<T> x(&xs[0], &xs[4]), y(&ys[0], &ys[4]);
   vector<triple> tri = delaunayTriangulation(x, y);
-  
+
   //expected: 0 1 3
   //          0 3 2
-  
+
   int i;
   for(i = 0; i < tri.size(); i++)
     printf("%d %d %d\n", tri[i].i, tri[i].j, tri[i].k);
