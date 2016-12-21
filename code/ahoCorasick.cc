@@ -1,9 +1,15 @@
 #include "template.h"
 
-#define NC 26
+#define NC 26       // No of characters
 #define NP 10005
 #define M 100005
-#define MM 500005
+#define MM 500005   // Max no of states
+
+// b stores the strings in dictionary, g stores the trie using states, 
+// a is the query string, lenb stores length of strings in b
+// output stores the index of word which end at the corresponding state
+// f stores the blue edge (largest suffix of current word), pre is useless!
+// marked represent that this word occurs in string a
 
 char a[M];
 char b[NP][105];

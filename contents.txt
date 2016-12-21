@@ -51,7 +51,7 @@ RMQ.cc	Range minima query in O(1) tiime using lookup matrix
 [String Manipulation]
 KMP.cc	Knuth-Morris-Pratt
 SuffixArray.cc	Suffix array
-ahoCurasick.cc	Aho Curasick Structure for string matching
+ahoCorasick.cc	Aho Corasick Structure for string matching
 Tries.cc	Tries Structure for storing strings
 Treaps.cc	Treaps Data structure implementation
 zAlgo.cc	Z's Algorithm, KMP's Bro
