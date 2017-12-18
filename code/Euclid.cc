@@ -30,7 +30,7 @@ int powermod(int a, int b, int m) {
   return ret;
 }
 
-// returns g = gcd(a, b); finds x, y such that d = ax + by
+// returns g = gcd(a, b); finds x, y such that g = ax + by
 int extended_euclid(int a, int b, int &x, int &y) {
   int xx = y = 0;
   int yy = x = 1;
@@ -76,7 +76,7 @@ pii chinese_remainder_theorem(int m1, int r1, int m2, int r2) {
 
 // Chinese remainder theorem: find z such that
 // z % m[i] = r[i] for all i.  Note that the solution is
-// unique modulo M = lcm_i (m[i]).  Return (z, M). On 
+// unique modulo M = lcm_i (m[i]).  Return (z, M). On
 // failure, M = -1. Note that we do not require the a[i]'s
 // to be relatively prime.
 pii chinese_remainder_theorem(const vi &m, const vi &r) {
@@ -105,7 +105,7 @@ bool linear_diophantine(int a, int b, int c, int &x, int &y) {
     if (c % a) return false;
     x = c / a; y = 0;
     return true;
-  } 
+  }
   int g = gcd(a, b);
   if (c % g) return false;
   x = c / g * mod_inverse(a / g, b / g);

@@ -6,7 +6,7 @@ using namespace __gnu_pbds;
 using namespace std;
 template <typename T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag,
-	tree_order_statistics_node_update>;
+      tree_order_statistics_node_update>;
 
 const long long Mod = 1e9 + 7;
 const long long Inf = 1e18;
@@ -33,9 +33,9 @@ typedef pair <ll, ll> pll;
 #define fast ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0);
 
 int main () {
-	ordered_set<int> X;
-	X.insert(1); X.insert(2); X.insert(4); X.insert(8); X.insert(16);
-	cout << *X.find_by_order(5) << '\n';
-	cout << X.order_of_key(4) << '\n';
-	return 0;
+    ordered_set<int> X;
+    X.insert(1); X.insert(2); X.insert(4); X.insert(8); X.insert(16);
+    cout << *X.find_by_order(5) << '\n';
+    cout << X.order_of_key(4) << '\n';
+    return 0;
 }

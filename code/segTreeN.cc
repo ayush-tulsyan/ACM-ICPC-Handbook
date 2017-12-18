@@ -30,6 +30,7 @@ struct segTree {
     if (E < a || b < S) return 0;   // TODO
     else if (a==b) return Tree[Node];
     int left=Node<<1, mid=(a+b)>>1, right=(Node<<1)|1;
+    if (S <= a && b <= E) return Tree[Node];
     return combine(query(left, a, mid, S, E), query(right, mid+1, b, S, E));
   }
   void update(int Node, int a, int b, int val, int I1, int I2) {
