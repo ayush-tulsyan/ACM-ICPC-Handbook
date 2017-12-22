@@ -6,8 +6,8 @@
 // Running time, O(|V|^2) cost per augmentation
 //     max flow:           O(|V|^3) augmentations
 //     min cost max flow:  O(|V|^4 * MAX_EDGE_COST) augmentations
-//     
-// INPUT: 
+//
+// INPUT:
 //     - graph, constructed using AddEdge()
 //     - source
 //     - sink
@@ -39,15 +39,15 @@ struct MinCostMaxFlow {
   VL dist, pi, width;
   VPII dad;
 
-  MinCostMaxFlow(int N) : 
-    N(N), cap(N, VL(N)), flow(N, VL(N)), cost(N, VL(N)), 
+  MinCostMaxFlow(int N) :
+    N(N), cap(N, VL(N)), flow(N, VL(N)), cost(N, VL(N)),
     found(N), dist(N), pi(N), width(N), dad(N) {}
-  
+
   void AddEdge(int from, int to, L cap, L cost) {
     this->cap[from][to] = cap;
     this->cost[from][to] = cost;
   }
-  
+
   void Relax(int s, int k, L cap, L cost, int dir) {
     L val = dist[s] + pi[s] - pi[k] + cost;
     if (cap && val < dist[k]) {
@@ -63,7 +63,7 @@ struct MinCostMaxFlow {
     fill(width.begin(), width.end(), 0);
     dist[s] = 0;
     width[s] = INF;
-    
+
     while (s != -1) {
       int best = -1;
       found[s] = true;
@@ -118,7 +118,7 @@ int main() {
       mcmf.AddEdge(int(v[i][1]), int(v[i][0]), K, v[i][2]);
     }
     mcmf.AddEdge(0, 1, D, 0);
-    
+
     pair<L, L> res = mcmf.GetMaxFlow(0, N);
 
     if (res.first == D) {
@@ -127,7 +127,7 @@ int main() {
       printf("Impossible.\n");
     }
   }
-  
+
   return 0;
 }
 
