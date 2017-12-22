@@ -1,9 +1,8 @@
 ACM-ICPC Handbook
 =================
 
-This is a repository for the upcoming ACM-ICPC onsite contests of Asia West Subcontinent sites.
-It currently hosts the team notebook.
-This repository contains code from the stanford's repository for their ACM-ICPC teams. It can be visited at [this](https://github.com/jaehyunp/stanfordacm) link.
+This repository hosts a 25 page notebook which acts as reference material for ACM-ICPC onsite contests
+We have borrowed code from the stanford's repository for their ACM-ICPC teams. It can be visited at [this](https://github.com/jaehyunp/stanfordacm) link.
 
 Generating team notebook
 ========================
