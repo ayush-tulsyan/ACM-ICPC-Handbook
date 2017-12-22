@@ -48,8 +48,10 @@ def get_tex(sections):
     tex = ''
     for (section_name, subsections) in sections:
         tex += '\\section{%s}\n' % texify(section_name)
+        tex += '\\vspace{-2ex}\n'
         for (filename, subsection_name) in subsections:
             tex += '\\subsection{%s}\n' % texify(subsection_name)
+            tex += '\\vspace{-1ex}\n'
             tex += '\\raggedbottom\\lstinputlisting[style=%s]{%s/%s}\n' % (get_style(filename), code_dir, filename)
             tex += '\\hrulefill\n'
         tex += '\n'

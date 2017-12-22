@@ -6,22 +6,22 @@
 [Combinatorial optimization]
 Dinic.cc	Dinic's Algo for Sparse max-flow
 MinCut.cc	Global min-cut
-minCostBipartite.cc	Min cost Bipartite Matching
+# minCostBipartite.cc	Min cost Bipartite Matching
 MinCostMaxFlow.cc	Min cost Max Flow
 
 [Geometry]
 ConvexHull.cc	Convex hull
-Geometry.cc	Miscellaneous geometry
+# Geometry.cc	Miscellaneous geometry
 # Geometry.java	Geometry using Java Libraries
-Delaunay.cc	Delaunay Triangulation
+# Delaunay.cc	Delaunay Triangulation
 
 [Numerical algorithms]
 FFT_new.cc	Fast Fourier transform
 Euclid.cc	Euclid and Fermat's Theorem
 sieve.cc	Sieve for Prime Numbers
 FastExpo.cc	Fast exponentiation
-Simplex.cc	Simplex Algorithm, Linear Programming
-CSP.cc	Constraint Satisfaction Problem
+# Simplex.cc	Simplex Algorithm, Linear Programming
+# CSP.cc	Constraint Satisfaction Problem
 
 [Graph algorithms]
 # BFS.cc	BFS
@@ -41,12 +41,12 @@ ArticulationOrBridge.cc	Articulation Pt/Bridge in a Graph
 ClosestPair.cc	Closest Pair of points in a 2D Plane
 
 [Data structures]
-BIT.cc	Binary Indexed Tree
+# BIT.cc	Binary Indexed Tree
 BIT2D.cc	BIT for 2-D plane questions
 LCA.cc	Lowest common ancestor
 segTreeN.cc	Segment tree class for range minima query
 lazyProp.cc	Lazy Propogation for Range update and Query
-RMQ.cc	Range minima query in O(1) tiime using lookup matrix
+RMQ.cc	Range minima query in O(1) time using lookup matrix
 
 [String Manipulation]
 KMP.cc	Knuth-Morris-Pratt
@@ -54,8 +54,8 @@ SuffixArray_new.cc	Suffix array
 SuffixTree.cc	Suffix tree
 ahoCorasick.cc	Aho Corasick Structure for string matching
 Tries.cc	Tries Structure for storing strings
-Treaps.cc	Treaps Data structure implementation
-zAlgo.cc	Z's Algorithm, KMP's Bro
+# Treaps.cc	Treaps Data structure implementation
+# zAlgo.cc	Z's Algorithm, KMP's Bro
 
 [Miscellaneous]
 template.h	C++ template
@@ -64,7 +64,7 @@ LongestIncreasingSubsequence.cc	Longest increasing subsequence
 LCS.cc	Longest common subsequence
 GaussJordan.cc	Gauss Jordan
 MillerRabin.cc	Miller-Rabin Primality Test
-BinSearch.cc	Binary Search
+# BinSearch.cc	Binary Search
 Dates.cc	Playing with dates
 # regex.java	Regular expressions handling using JAVA
 Hash.cc	Hashing

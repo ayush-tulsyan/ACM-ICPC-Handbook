@@ -1,4 +1,4 @@
-\documentclass[8pt]{article}
+\documentclass[11pt]{article}
 \usepackage[a4paper,left=0.2in,right=0.2in,top=0.7in,bottom=0.2in]{geometry}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
@@ -10,14 +10,15 @@
 \usepackage{amsmath, amssymb, amsfonts}
 
 \renewcommand*{\ttdefault}{pcr}
-\renewcommand\cftsecfont{\fontsize{8}{9}\bfseries}
-\renewcommand\cftsecpagefont{\fontsize{8}{9}\mdseries}
-\renewcommand\cftsubsecfont{\fontsize{5}{6}\mdseries}
-\renewcommand\cftsubsecpagefont{\fontsize{5}{6}\mdseries}
-\renewcommand\cftsecafterpnum{\vspace{-1ex}}
-\renewcommand\cftsubsecafterpnum{\vspace{-1ex}}
+\renewcommand\cftsecfont{\fontsize{11}{6}\bfseries}
+\renewcommand\cftsecpagefont{\fontsize{11}{6}\mdseries}
+\renewcommand\cftsubsecfont{\fontsize{11}{6}\mdseries}
+\renewcommand\cftsubsecpagefont{\fontsize{11}{6}\mdseries}
+\renewcommand\cftsecafterpnum{\vspace{-0.5ex}}
+\renewcommand\cftsubsecafterpnum{\vspace{-0.5ex}}
 
 \newcommand{\Section}[1]{
+    \vspace{-7mm}
     \section*{#1}
     \addcontentsline{toc}{subsection}{#1}
     \vspace{-3mm}
@@ -30,7 +31,7 @@
     breaklines=true,
     xleftmargin=\parindent,
     showstringspaces=false,
-    basicstyle=\fontsize{8}{6}\ttfamily,
+    basicstyle=\fontsize{11}{4}\ttfamily,
 }
 \lstdefinestyle{cpp}{
 	style=shared,

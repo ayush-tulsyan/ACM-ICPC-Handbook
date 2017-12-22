@@ -53,11 +53,13 @@ ${{s-1} \choose {n-1}}$ \\
 Number of lattice paths from $(0,0)$ to $(a,b)$, restricted to east and north
 steps: ${a+b \choose a}$
 
+\iffalse
 \Topic{Multinomial theorem}.
 $(a_1+\dots+a_k)^n = \sum {n \choose n_1,\dots,n_k} a_1^{n_1} \dots a_k^{n_k}$,
 where $n_i \ge 0$ and $\sum n_i=n$. \\
 $${n \choose n_1,\dots,n_k} = M(n_1,\dots,n_k) = \frac{n!}{n_1! \dots n_k!}$$
 $$M(a,\dots,b,c,\dots) = M(a+\dots+b,c,\dots) M(a,\dots,b)$$
+\fi
 
 \Topic{Catalan numbers}.
 $C_n = \frac{1}{n+1} {2n \choose n}$.
@@ -286,12 +288,14 @@ $a^{(p-1)/\gcd(n,p-1)} \equiv 1 \pmod{p}$, and no solutions otherwise.
 $g^i \equiv a \pmod{p}$, $g^u \equiv x \pmod{p}$.
 $x^n \equiv a \pmod{p}$ iff $g^{nu} \equiv g^i \pmod{p}$ iff $nu \equiv i \pmod{p}$.)
 
+\iffalse
 \Topic{Discrete logarithm problem}.  Find $x$ from $a^x \equiv b \pmod{m}$.
 Can be solved in $O(\sqrt{m})$ time and space with a meet-in-the-middle trick.
 Let $n = \lceil \sqrt{m} \rceil$, and $x = ny - z$.
 Equation becomes $a^{ny} \equiv b a^z \pmod{m}$.  Precompute all values that
 the RHS can take for $z = 0, 1, \dots, n-1$, and brute force $y$ on the LHS,
 each time checking whether there's a corresponding value for RHS.
+\fi
 
 \Topic{Pythagorean triples}.  Integer solutions of $x^2 + y^2 = z^2$
 All relatively prime triples are given by:
@@ -309,15 +313,18 @@ A product of two sums of two squares is a sum of two squares.
 Thus, $n$ is a sum of two squares iff every prime of
 form $p=4k+3$ occurs an even number of times in $n$'s factorization.
 
+\iffalse
 \Topic{RSA}. Let $p$ and $q$ be random distinct large primes, $n = pq$.
 Choose a small odd integer $e$, relatively prime to $\phi(n) = (p-1)(q-1)$,
 and let $d = e^{-1} \pmod{\phi(n)}$. Pairs $(e,n)$ and $(d,n)$ are
 the public and secret keys, respectively.
 Encryption is done by raising a message $M \in Z_n$ to the power $e$ or $d$,
 modulo $n$.
+\fi
 
 % }}}
 
+\iffalse
 % String Algorithms {{{
 
 \Section{String Algorithms}
@@ -332,6 +339,7 @@ The $r$-th fow of the matrix is $A[r]$, $A[next[r]]$, $A[next[next[r]]]$, ...
 \Topic{Huffman's algorithm}.  Start with a forest, consisting of isolated
 vertices.  Repeatedly merge two trees with the lowest weights.
 % }}}
+\fi
 
 % Graph Theory {{{
 \Section{Graph Theory}
@@ -381,11 +389,14 @@ Construction:
 \end{verbatim}
 \vspace{-2mm}
 
+\iffalse
 \Topic{Stable marriages problem}.
 While there is a free man $m$: let $w$ be the most-preferred woman to whom he
 has not yet proposed, and propose $m$ to $w$. If $w$ is free, or is engaged to someone whom
 she prefers less than $m$, match $m$ with $w$, else deny proposal.
+\fi
 
+\iffalse
 \Topic{Stoer-Wagner's min-cut algorithm}.
 Start from a set $A$ containing an arbitrary vertex.
 While $A \ne V$, add to $A$ the most tightly connected vertex
@@ -393,7 +404,9 @@ While $A \ne V$, add to $A$ the most tightly connected vertex
 Store cut-of-the-phase (the cut between the last added vertex and rest of
 the graph), and merge the two vertices added last.  Repeat until the graph
 is contracted to a single vertex.  Minimum cut is one of the cuts-of-the-phase.
+\fi
 
+\iffalse
 \Topic{Tarjan's offline LCA algorithm}. (Based on DFS and union-find structure.)
 \begin{verbatim}
     DFS(x):
@@ -404,12 +417,15 @@ is contracted to a single vertex.  Minimum cut is one of the cuts-of-the-phase.
       for all queries {x, y}:
         if seen[y] then output "LCA(x, y) is ancestor[Find(y)]"
 \end{verbatim}
+\fi
 
+\iffalse
 \Topic{Strongly-connected components}. Kosaraju's algorithm. \\
 1. Let $G^T$ be a transpose $G$ (graph with reversed edges.) \\
 1. Call DFS($G^T$) to compute finishing times $f[u]$ for each vertex $u$. \\
 3. For each vertex $u$, in the order of decreasing $f[u]$, perform DFS($G$, $u$). \\
 4. Each tree in the 3rd step's DFS forest is a separate SCC.
+\fi
 
 \Topic{2-SAT}. Build an implication graph with 2 vertices for each
 variable -- for the variable and its inverse; for each clause $x \lor y$
